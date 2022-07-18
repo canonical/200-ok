@@ -25,7 +25,7 @@ def test_given_delete_request_when_http_call_then_returns_200():
 
 
 def test_given_put_request_when_http_call_then_returns_200():
-    response = requests.delete(url=URL)
+    response = requests.put(url=URL)
     response.raise_for_status()
 
     assert response.status_code == 200
